@@ -1,0 +1,64 @@
+#merchants {
+  table {
+    width: 100%
+  }
+
+  .login-times {
+    span {
+      &::after {
+        content: '/';
+        margin-left: 4px;
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+    }
+  }
+
+  .btn-ctrl-merchant {
+    width: 68px;
+    padding: 7px 9px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .add-merchant-dialog {
+    .el-dialog__header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #20a0ff;
+      text-align: left;
+
+      .el-dialog__title {
+        color: #fff;
+      }
+      .el-dialog__headerbtn {
+        &>i {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .add-flow-dialog {
+    .call-limit-total {
+      padding-left: 2px;
+      font-weight: bold;
+
+      &::before {
+        padding-right: 2px;
+        font-weight: normal;
+        content: "/";
+      }
+    }
+
+    .tips {
+      &.flow-package {
+        color: #f00;
+        font-size: 12px;
+      }
+    }
+  }
+
+}

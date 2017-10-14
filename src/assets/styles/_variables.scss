@@ -1,0 +1,55 @@
+@import "fonts";
+
+@for $px from 0 through 6 {
+  $wpx: 100 + $px * 50;
+  .w#{$wpx} {
+    width: #{$wpx}px !important;
+  }
+}
+
+@for $px from 0 through 100 {
+  .pd#{$px} {
+    padding: #{$px}px;
+  }
+  .pl#{$px} {
+    padding-left: #{$px}px;
+  }
+  .pr#{$px} {
+    padding-right: #{$px}px;
+  }
+  .pt#{$px} {
+    padding-top: #{$px}px;
+  }
+  .pb#{$px} {
+    padding-bottom: #{$px}px;
+  }
+
+  .mg#{$px} {
+    margin: #{$px}px;
+  }
+  .ml#{$px} {
+    margin-left: #{$px}px;
+  }
+  .mr#{$px} {
+    margin-right: #{$px}px;
+  }
+  .mt#{$px} {
+    margin-top: #{$px}px;
+  }
+  .mb#{$px} {
+    margin-bottom: #{$px}px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.cursor-normal {
+  cursor: default !important;
+}
+
+.wordbreak {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
